@@ -4,7 +4,7 @@
   "description": "Delivery Much Tech Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r esm './src/**/*test.js' --timeout 0 --exit",
+    "test": "mocha -r esm --timeout 0 --exit",
     "start": "node -r esm src/server.js"
   },
   "repository": {
