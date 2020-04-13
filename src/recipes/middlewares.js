@@ -4,7 +4,7 @@ const ingredientsSanitizerFn = (value) => (!value ? [] : value.split(','));
 
 const ingredientsSanitizer = query('i').customSanitizer(ingredientsSanitizerFn);
 
-export const ingredientsValidators = () => {
+export const ingredientsValidator = () => {
   const min = 1;
   const max = 3;
   const message = `Você deve fornercer ao menos ${min} e no máximo ${max} ingredientes`;
